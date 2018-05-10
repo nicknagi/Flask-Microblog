@@ -4,6 +4,9 @@ from werkzeug.security import generate_password_hash, check_password_hash
 from flask_login import UserMixin
 from app import login #The login manager object defined in init.py
 from hashlib import md5
+from time import time
+import jwt
+from app import application
 
 ########## File contains models and necessary systems needed for database operation ###############
 
@@ -68,6 +71,22 @@ class User(UserMixin, db.Model):
                 followers.c.follower_id == self.id)
         own = Post.query.filter_by(user_id=self.id)
         return followed.union(own).order_by(Post.timestamp.desc())
+
+    # use jwt to get a password token
+    def get_reset_password_token(self, expires_in=600):
+        return jwt.encode(
+            {'reset_password': self.id, 'exp': time() + expires_in},
+            application.config['SECRET_KEY'], algorithm='HS256').decode('utf-8')
+
+    # use jwt to verify given token
+    @staticmethod
+    def verify_reset_password_token(token):
+        try:
+            id = jwt.decode(token, application.config['SECRET_KEY'],
+                            algorithms=['HS256'])['reset_password']
+        except:
+            return
+        return User.query.get(id)
 
 #Database for storing posts each post is linked backed to a user
 class Post(db.Model):
