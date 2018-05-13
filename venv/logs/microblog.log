@@ -72,3 +72,7 @@ jinja2.exceptions.TemplateNotFound: bootstrap/wtf.html
 2018-05-11 14:54:29,347 INFO: Microblog startup [in /home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/app/__init__.py:42]
 2018-05-11 14:54:36,630 INFO: Microblog startup [in /home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/app/__init__.py:42]
 2018-05-11 14:54:42,816 INFO: Microblog startup [in /home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/app/__init__.py:42]
+2018-05-12 16:55:26,497 INFO: Microblog startup [in /home/nicknagi/PycharmProjects/Flask-Microblog/venv/app/__init__.py:43]
+2018-05-12 16:56:37,824 INFO: Microblog startup [in /home/nicknagi/PycharmProjects/Flask-Microblog/venv/app/__init__.py:43]
+2018-05-12 17:18:34,509 INFO: Microblog startup [in /home/nicknagi/PycharmProjects/Flask-Microblog/venv/app/__init__.py:43]
+2018-05-12 17:18:53,018 INFO: Microblog startup [in /home/nicknagi/PycharmProjects/Flask-Microblog/venv/app/__init__.py:43]
