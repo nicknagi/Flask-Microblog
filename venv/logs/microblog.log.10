@@ -1,12 +1,4 @@
-2018-05-07 19:58:51,316 INFO: Microblog startup [in /home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/app/__init__.py:34]
-2018-05-07 19:59:30,820 INFO: Microblog startup [in /home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/app/__init__.py:34]
-2018-05-07 19:59:40,783 INFO: Microblog startup [in /home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/app/__init__.py:34]
-2018-05-07 22:02:28,505 INFO: Microblog startup [in /home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/app/__init__.py:34]
-2018-05-07 22:02:59,995 INFO: Microblog startup [in /home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/app/__init__.py:34]
-2018-05-07 22:42:58,777 INFO: Microblog startup [in /home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/app/__init__.py:35]
-2018-05-07 22:58:26,606 INFO: Microblog startup [in /home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/app/__init__.py:35]
-2018-05-08 16:05:24,638 INFO: Microblog startup [in /home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/app/__init__.py:35]
-2018-05-08 16:05:27,311 ERROR: Exception on /favicon.ico [GET] [in /home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/flask/app.py:1761]
+2018-05-08 16:05:44,162 ERROR: Exception on /favicon.ico [GET] [in /home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/flask/app.py:1761]
 Traceback (most recent call last):
   File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
     rv = self.dispatch_request()
@@ -62,3 +54,60 @@ Traceback (most recent call last):
   File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/jinja2/parser.py", line 59, in fail
     raise exc(msg, lineno, self.name, self.filename)
 jinja2.exceptions.TemplateSyntaxError: tag name expected
+2018-05-08 16:05:44,796 ERROR: Exception on /favicon.ico [GET] [in /home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/flask/app.py", line 1713, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/flask/app.py", line 1644, in handle_http_exception
+    return handler(e)
+  File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/app/errors.py", line 6, in not_found_error
+    return render_template('404.html'), 404
+  File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/flask/templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/jinja2/environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/jinja2/loaders.py", line 125, in load
+    code = environment.compile(source, name, filename)
+  File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/jinja2/environment.py", line 591, in compile
+    self.handle_exception(exc_info, source_hint=source_hint)
+  File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/app/templates/404.html", line 2, in template
+    {%{%  extendsextends  "base.html""base.html"  %}%}
+  File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/jinja2/environment.py", line 497, in _parse
+    return Parser(self, source, name, encode_filename(filename)).parse()
+  File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/jinja2/parser.py", line 901, in parse
+    result = nodes.Template(self.subparse(), lineno=1)
+  File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/jinja2/parser.py", line 883, in subparse
+    rv = self.parse_statement()
+  File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/jinja2/parser.py", line 125, in parse_statement
+    self.fail('tag name expected', token.lineno)
+  File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/jinja2/parser.py", line 59, in fail
+    raise exc(msg, lineno, self.name, self.filename)
+jinja2.exceptions.TemplateSyntaxError: tag name expected
+2018-05-08 16:06:51,181 INFO: Microblog startup [in /home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/app/__init__.py:35]
