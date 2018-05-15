@@ -96,3 +96,4 @@ KeyError: 'babel'
 2018-05-15 14:08:57,884 INFO: Microblog startup [in /home/nagianek/PycharmProjects/Flask-Microblog/venv/app/__init__.py:45]
 2018-05-15 14:35:45,667 INFO: Microblog startup [in /home/nagianek/PycharmProjects/Flask-Microblog/venv/app/__init__.py:74]
 2018-05-15 14:37:45,436 INFO: Microblog startup [in /home/nagianek/PycharmProjects/Flask-Microblog/venv/app/__init__.py:74]
+2018-05-15 15:05:04,242 INFO: Microblog startup [in /home/nagianek/PycharmProjects/Flask-Microblog/venv/app/__init__.py:78]
