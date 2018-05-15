@@ -11,6 +11,7 @@ from flask_moment import Moment
 from flask_babel import Babel, lazy_gettext as _l
 from config import Config
 
+#All extensions initialized without context
 db = SQLAlchemy()
 migrate = Migrate()
 login = LoginManager()
@@ -21,11 +22,12 @@ bootstrap = Bootstrap()
 moment = Moment()
 babel = Babel()
 
-
+#Function called in microblog.py, the function contains an initialization class
 def create_app(config_class=Config):
     app = Flask(__name__)
     app.config.from_object(config_class)
 
+    #Initialize all extensions
     db.init_app(app)
     migrate.init_app(app, db)
     login.init_app(app)
@@ -34,6 +36,7 @@ def create_app(config_class=Config):
     moment.init_app(app)
     babel.init_app(app)
 
+    #Add blueprints
     from app.errors import bp as errors_bp
     app.register_blueprint(errors_bp)
 
@@ -43,6 +46,7 @@ def create_app(config_class=Config):
     from app.main import bp as main_bp
     app.register_blueprint(main_bp)
 
+    #Set up all the logging information
     if not app.debug and not app.testing:
         if app.config['MAIL_SERVER']:
             auth = None
