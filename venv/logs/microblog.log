@@ -1,4 +1,6 @@
-2018-05-15 14:06:42,382 ERROR: Exception on /favicon.ico [GET] [in /home/nagianek/.local/lib/python3.6/site-packages/flask/app.py:1560]
+2018-05-15 20:11:21,995 INFO: Microblog startup [in /home/nagianek/PycharmProjects/Flask-Microblog/venv/app/__init__.py:82]
+2018-05-15 20:12:08,754 INFO: Microblog startup [in /home/nagianek/PycharmProjects/Flask-Microblog/venv/app/__init__.py:82]
+2018-05-15 20:12:14,790 ERROR: Exception on /search [GET] [in /home/nagianek/.local/lib/python3.6/site-packages/flask/app.py:1560]
 Traceback (most recent call last):
   File "/home/nagianek/.local/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
     response = self.full_dispatch_request()
@@ -8,92 +10,27 @@ Traceback (most recent call last):
     reraise(exc_type, exc_value, tb)
   File "/home/nagianek/.local/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
     raise value
-  File "/home/nagianek/.local/lib/python3.6/site-packages/flask/app.py", line 1610, in full_dispatch_request
-    rv = self.preprocess_request()
-  File "/home/nagianek/.local/lib/python3.6/site-packages/flask/app.py", line 1831, in preprocess_request
-    rv = func()
-  File "/home/nagianek/PycharmProjects/Flask-Microblog/venv/app/routes.py", line 123, in before_request
-    g.locale = str(get_locale())
-  File "/home/nagianek/.local/lib/python3.6/site-packages/flask_babel/__init__.py", line 253, in get_locale
-    babel = current_app.extensions['babel']
-KeyError: 'babel'
-2018-05-15 14:06:42,667 ERROR: Exception on /index [GET] [in /home/nagianek/.local/lib/python3.6/site-packages/flask/app.py:1560]
-Traceback (most recent call last):
-  File "/home/nagianek/.local/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/home/nagianek/.local/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/home/nagianek/.local/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/home/nagianek/.local/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
-    raise value
-  File "/home/nagianek/.local/lib/python3.6/site-packages/flask/app.py", line 1610, in full_dispatch_request
-    rv = self.preprocess_request()
-  File "/home/nagianek/.local/lib/python3.6/site-packages/flask/app.py", line 1831, in preprocess_request
-    rv = func()
-  File "/home/nagianek/PycharmProjects/Flask-Microblog/venv/app/routes.py", line 123, in before_request
-    g.locale = str(get_locale())
-  File "/home/nagianek/.local/lib/python3.6/site-packages/flask_babel/__init__.py", line 253, in get_locale
-    babel = current_app.extensions['babel']
-KeyError: 'babel'
-2018-05-15 14:06:42,784 ERROR: Exception on /favicon.ico [GET] [in /home/nagianek/.local/lib/python3.6/site-packages/flask/app.py:1560]
-Traceback (most recent call last):
-  File "/home/nagianek/.local/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/home/nagianek/.local/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/home/nagianek/.local/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/home/nagianek/.local/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
-    raise value
-  File "/home/nagianek/.local/lib/python3.6/site-packages/flask/app.py", line 1610, in full_dispatch_request
-    rv = self.preprocess_request()
-  File "/home/nagianek/.local/lib/python3.6/site-packages/flask/app.py", line 1831, in preprocess_request
-    rv = func()
-  File "/home/nagianek/PycharmProjects/Flask-Microblog/venv/app/routes.py", line 123, in before_request
-    g.locale = str(get_locale())
-  File "/home/nagianek/.local/lib/python3.6/site-packages/flask_babel/__init__.py", line 253, in get_locale
-    babel = current_app.extensions['babel']
-KeyError: 'babel'
-2018-05-15 14:06:43,050 ERROR: Exception on /index [GET] [in /home/nagianek/.local/lib/python3.6/site-packages/flask/app.py:1560]
-Traceback (most recent call last):
-  File "/home/nagianek/.local/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/home/nagianek/.local/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/home/nagianek/.local/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/home/nagianek/.local/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
-    raise value
-  File "/home/nagianek/.local/lib/python3.6/site-packages/flask/app.py", line 1610, in full_dispatch_request
-    rv = self.preprocess_request()
-  File "/home/nagianek/.local/lib/python3.6/site-packages/flask/app.py", line 1831, in preprocess_request
-    rv = func()
-  File "/home/nagianek/PycharmProjects/Flask-Microblog/venv/app/routes.py", line 123, in before_request
-    g.locale = str(get_locale())
-  File "/home/nagianek/.local/lib/python3.6/site-packages/flask_babel/__init__.py", line 253, in get_locale
-    babel = current_app.extensions['babel']
-KeyError: 'babel'
-2018-05-15 14:06:43,168 ERROR: Exception on /favicon.ico [GET] [in /home/nagianek/.local/lib/python3.6/site-packages/flask/app.py:1560]
-Traceback (most recent call last):
-  File "/home/nagianek/.local/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/home/nagianek/.local/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/home/nagianek/.local/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/home/nagianek/.local/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
-    raise value
-  File "/home/nagianek/.local/lib/python3.6/site-packages/flask/app.py", line 1610, in full_dispatch_request
-    rv = self.preprocess_request()
-  File "/home/nagianek/.local/lib/python3.6/site-packages/flask/app.py", line 1831, in preprocess_request
-    rv = func()
-  File "/home/nagianek/PycharmProjects/Flask-Microblog/venv/app/routes.py", line 123, in before_request
-    g.locale = str(get_locale())
-  File "/home/nagianek/.local/lib/python3.6/site-packages/flask_babel/__init__.py", line 253, in get_locale
-    babel = current_app.extensions['babel']
-KeyError: 'babel'
-2018-05-15 14:08:57,884 INFO: Microblog startup [in /home/nagianek/PycharmProjects/Flask-Microblog/venv/app/__init__.py:45]
-2018-05-15 14:35:45,667 INFO: Microblog startup [in /home/nagianek/PycharmProjects/Flask-Microblog/venv/app/__init__.py:74]
-2018-05-15 14:37:45,436 INFO: Microblog startup [in /home/nagianek/PycharmProjects/Flask-Microblog/venv/app/__init__.py:74]
-2018-05-15 15:05:04,242 INFO: Microblog startup [in /home/nagianek/PycharmProjects/Flask-Microblog/venv/app/__init__.py:78]
+  File "/home/nagianek/.local/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/nagianek/.local/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/nagianek/.local/lib/python3.6/site-packages/flask_login/utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/nagianek/PycharmProjects/Flask-Microblog/venv/app/main/routes.py", line 152, in search
+    next_url=next_url, prev_url=prev_url)
+  File "/home/nagianek/.local/lib/python3.6/site-packages/flask/templating.py", line 133, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/home/nagianek/.local/lib/python3.6/site-packages/jinja2/environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/nagianek/.local/lib/python3.6/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/nagianek/.local/lib/python3.6/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/nagianek/.local/lib/python3.6/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/nagianek/.local/lib/python3.6/site-packages/flask/templating.py", line 57, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/nagianek/.local/lib/python3.6/site-packages/flask/templating.py", line 85, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: search.html
+2018-05-15 20:12:51,517 INFO: Microblog startup [in /home/nagianek/PycharmProjects/Flask-Microblog/venv/app/__init__.py:82]

@@ -1,93 +1,4 @@
-2018-05-09 22:34:14,389 ERROR: Exception on /reset_password_request [POST] [in /home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/flask/app.py:1761]
-Traceback (most recent call last):
-  File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
-    raise value
-  File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/app/routes.py", line 192, in reset_password_request
-    send_password_reset_email(user)
-  File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/app/email.py", line 18, in send_password_reset_email
-    user=user, token=token),
-  File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/flask/templating.py", line 134, in render_template
-    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
-  File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/jinja2/environment.py", line 869, in get_or_select_template
-    return self.get_template(template_name_or_list, parent, globals)
-  File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/jinja2/environment.py", line 830, in get_template
-    return self._load_template(name, self.make_globals(globals))
-  File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/jinja2/environment.py", line 804, in _load_template
-    template = self.loader.load(self, name, globals)
-  File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/jinja2/loaders.py", line 113, in load
-    source, filename, uptodate = self.get_source(environment, name)
-  File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/flask/templating.py", line 58, in get_source
-    return self._get_source_fast(environment, template)
-  File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/flask/templating.py", line 86, in _get_source_fast
-    raise TemplateNotFound(template)
-jinja2.exceptions.TemplateNotFound: email/reset_password.txt
-2018-05-09 22:35:55,495 INFO: Microblog startup [in /home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/app/__init__.py:37]
-2018-05-09 22:36:03,849 ERROR: Exception on /reset_password_request [POST] [in /home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/flask/app.py:1761]
-Traceback (most recent call last):
-  File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/flask_mail.py", line 492, in send
-    message.send(connection)
-  File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/flask_mail.py", line 427, in send
-    connection.send(self)
-  File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/flask_mail.py", line 192, in send
-    message.rcpt_options)
-  File "/usr/lib/python3.6/smtplib.py", line 852, in sendmail
-    self.ehlo_or_helo_if_needed()
-  File "/usr/lib/python3.6/smtplib.py", line 600, in ehlo_or_helo_if_needed
-    if not (200 <= self.ehlo()[0] <= 299):
-  File "/usr/lib/python3.6/smtplib.py", line 440, in ehlo
-    self.putcmd(self.ehlo_msg, name or self.local_hostname)
-  File "/usr/lib/python3.6/smtplib.py", line 367, in putcmd
-    self.send(str)
-  File "/usr/lib/python3.6/smtplib.py", line 359, in send
-    raise SMTPServerDisconnected('please run connect() first')
-smtplib.SMTPServerDisconnected: please run connect() first
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
-    raise value
-  File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/app/routes.py", line 192, in reset_password_request
-    send_password_reset_email(user)
-  File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/app/email.py", line 20, in send_password_reset_email
-    user=user, token=token))
-  File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/app/email.py", line 10, in send_email
-    mail.send(msg)
-  File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/flask_mail.py", line 492, in send
-    message.send(connection)
-  File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/flask_mail.py", line 152, in __exit__
-    self.host.quit()
-  File "/usr/lib/python3.6/smtplib.py", line 984, in quit
-    res = self.docmd("quit")
-  File "/usr/lib/python3.6/smtplib.py", line 420, in docmd
-    self.putcmd(cmd, args)
-  File "/usr/lib/python3.6/smtplib.py", line 367, in putcmd
-    self.send(str)
-  File "/usr/lib/python3.6/smtplib.py", line 359, in send
-    raise SMTPServerDisconnected('please run connect() first')
-smtplib.SMTPServerDisconnected: please run connect() first
-2018-05-09 22:38:26,950 INFO: Microblog startup [in /home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/app/__init__.py:37]
-2018-05-09 22:38:41,090 ERROR: Exception on /reset_password_request [POST] [in /home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/flask/app.py:1761]
+2018-05-09 22:42:21,272 ERROR: Exception on /reset_password_request [POST] [in /home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/flask/app.py:1761]
 Traceback (most recent call last):
   File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
     response = self.full_dispatch_request()
@@ -111,9 +22,86 @@ Traceback (most recent call last):
     with self.connect() as connection:
   File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/flask_mail.py", line 144, in __enter__
     self.host = self.configure_host()
-  File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/flask_mail.py", line 158, in configure_host
-    host = smtplib.SMTP(self.mail.server, self.mail.port)
-  File "/usr/lib/python3.6/smtplib.py", line 254, in __init__
-    raise SMTPConnectError(code, msg)
-smtplib.SMTPConnectError: (421, b'4.4.5 Server busy, try again later.')
-2018-05-09 22:42:10,341 INFO: Microblog startup [in /home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/app/__init__.py:37]
+  File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/flask_mail.py", line 165, in configure_host
+    host.login(self.mail.username, self.mail.password)
+  File "/usr/lib/python3.6/smtplib.py", line 730, in login
+    raise last_exception
+  File "/usr/lib/python3.6/smtplib.py", line 721, in login
+    initial_response_ok=initial_response_ok)
+  File "/usr/lib/python3.6/smtplib.py", line 642, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (534, b'5.7.14 <https://accounts.google.com/signin/continue?sarp=1&scc=1&plt=AKgnsbuc\n5.7.14 L-frS3b-bJZfE-TgehYE1717zz4iuNdYwVduj43nKsIDDK0u0MAJZ-tP2n4g6iw_oIYw5o\n5.7.14 PCV8QGv8p7kXGcuB2H88YhP0tpFt4pEo0caMqo0aqSzOlmVQXL0WnEBwbWfTN-dfjP2lV9\n5.7.14 5eyqpNF31xTM6Yxd47bV4l0k86_Z9Zj753Knro0TDP7ALMSKrdNGRCy8WzJowqZl5CbdjU\n5.7.14 dyxXof4SJOgT4W3XDxved0lYuqWxU> Please log in via your web browser and\n5.7.14 then try again.\n5.7.14  Learn more at\n5.7.14  https://support.google.com/mail/answer/78754 e139-v6sm8497692ite.1 - gsmtp')
+2018-05-09 22:43:19,506 INFO: Microblog startup [in /home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/app/__init__.py:37]
+2018-05-10 17:02:54,065 INFO: Microblog startup [in /home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/app/__init__.py:37]
+2018-05-10 17:03:12,423 INFO: Microblog startup [in /home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/app/__init__.py:37]
+2018-05-10 17:03:19,469 INFO: Microblog startup [in /home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/app/__init__.py:37]
+2018-05-10 17:03:21,650 ERROR: Exception on /login [GET] [in /home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/app/routes.py", line 65, in login
+    return render_template('login.html',title = 'Sign In', form = form)
+  File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/flask/templating.py", line 135, in render_template
+    context, ctx.app)
+  File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/flask/templating.py", line 117, in _render
+    rv = template.render(context)
+  File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/app/templates/login.html", line 2, in top-level template code
+    {% import 'bootstrap/wtf.html' as wtf %}
+  File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/flask/templating.py", line 58, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/flask/templating.py", line 86, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: bootstrap/wtf.html
+2018-05-10 17:03:21,863 ERROR: Exception on /login [GET] [in /home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/app/routes.py", line 65, in login
+    return render_template('login.html',title = 'Sign In', form = form)
+  File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/flask/templating.py", line 135, in render_template
+    context, ctx.app)
+  File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/flask/templating.py", line 117, in _render
+    rv = template.render(context)
+  File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/app/templates/login.html", line 2, in top-level template code
+    {% import 'bootstrap/wtf.html' as wtf %}
+  File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/flask/templating.py", line 58, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/nicknagi/PycharmProjects/Flask-Micro-Blog/venv/lib/python3.6/site-packages/flask/templating.py", line 86, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: bootstrap/wtf.html

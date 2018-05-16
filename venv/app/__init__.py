@@ -10,6 +10,7 @@ from flask_bootstrap import Bootstrap
 from flask_moment import Moment
 from flask_babel import Babel, lazy_gettext as _l
 from config import Config
+from elasticsearch import Elasticsearch
 
 #All extensions initialized without context
 db = SQLAlchemy()
@@ -25,7 +26,10 @@ babel = Babel()
 #Function called in microblog.py, the function contains an initialization class
 def create_app(config_class=Config):
     app = Flask(__name__)
-    app.config.from_object(config_class)
+    app.config.from_object(config_class)\
+
+    app.elasticsearch = Elasticsearch([app.config['ELASTICSEARCH_URL']]) \
+        if app.config['ELASTICSEARCH_URL'] else None
 
     #Initialize all extensions
     db.init_app(app)
