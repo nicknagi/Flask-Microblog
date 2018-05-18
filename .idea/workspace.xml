@@ -1,55 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="03286125-7bf1-4bd3-a539-fc7fab70c0f5" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/venv/app.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/app/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/app/auth/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/app/auth/email.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/app/auth/forms.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/app/auth/routes.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/app/cli.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/app/email.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/app/errors/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/app/errors/handlers.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/app/main/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/app/main/forms.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/app/main/routes.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/app/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/app/search.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/app/static/loading.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/app/templates/_post.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/app/templates/auth/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/app/templates/auth/register.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/app/templates/auth/reset_password.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/app/templates/auth/reset_password_request.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/app/templates/base.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/app/templates/edit_profile.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/app/templates/email/reset_password.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/app/templates/email/reset_password.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/app/templates/errors/404.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/app/templates/errors/500.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/app/templates/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/app/templates/search.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/app/templates/user.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/app/translate.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/app/translations/es/LC_MESSAGES/messages.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/config.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/microblog.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/migrations/README" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/migrations/alembic.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/migrations/env.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/migrations/script.py.mako" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/migrations/versions/0a89bc234cf0_new_fields_in_user_model.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/migrations/versions/6c50693a771c_users_table.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/migrations/versions/74e33c81fd08_posts_table.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/migrations/versions/9f3d8c686f0b_add_language_to_posts.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/migrations/versions/dba71fb11a5a_followers.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/pip-selfcheck.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/pyvenv.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/requirements.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/tests.py" beforeDir="false" />
-    </list>
+    <list default="true" id="03286125-7bf1-4bd3-a539-fc7fab70c0f5" name="Default" comment="Restructured Folders" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -283,7 +235,14 @@
       <option name="project" value="LOCAL" />
       <updated>1526527250883</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Restructured Folders">
+      <created>1526528858684</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1526528858684</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -328,7 +287,8 @@
     <MESSAGE value="Disabled Live translation link/button for AJAX from client side. Done due to no API account exisitng yet" />
     <MESSAGE value="Added full text search functionality using Elasticsearch" />
     <MESSAGE value="Updated requirements.txt" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated requirements.txt" />
+    <MESSAGE value="Restructured Folders" />
+    <option name="LAST_COMMIT_MESSAGE" value="Restructured Folders" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/venv/app/search.py">
